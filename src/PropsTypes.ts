@@ -118,6 +118,11 @@ export interface PropsTypes  {
     * @default 50
     */
     blurRadius?: number;
+    /**
+    * Indicator main Container style
+    * @default 50
+    */
+    indicatorMainContainerStyle? : ViewStyle
 }
 
 // export {

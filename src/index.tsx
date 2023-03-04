@@ -27,6 +27,7 @@ export const ImageSlider = ({
     activeIndicatorStyle = {},
     inActiveIndicatorStyle = {},
     indicatorContainerStyle = {},
+    indicatorMainContainerStyle = {},
     onItemChanged = (itemData) => { },
     localImg = false,
     onClick = (item: DataType, index: number) => {},
@@ -231,7 +232,7 @@ export const ImageSlider = ({
                     )
                 }}
             />
-            <View style={{ flex: 1, position: 'absolute', bottom: 20, alignSelf: 'center' }}>
+            <View style={[{ flex: 1, position: 'absolute', bottom: 20, alignSelf: 'center' },indicatorMainContainerStyle]}>
                 {showIndicator &&
                     <Indicator
                         data={data}
